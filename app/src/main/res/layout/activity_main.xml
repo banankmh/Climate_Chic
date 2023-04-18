@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="bold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/viewsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:constraint_referenced_ids="imageView_outfit,textView_talkAboutChosenOutfit,
+       textView_humidityNo,textView_PressureNo,textView_tempreture,textView_windSpeed,
+       textView_wind,textView_humidity,textView_Pressure" />
+
+    <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/lottie_noInternet"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginTop="150dp"
+       app:lottie_rawRes="@raw/nointernet"
+       android:layout_width="match_parent"
+       android:visibility="invisible"
+       android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/climate_chic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_climate_lancher_foreground" />
+
+    <TextView
+        android:id="@+id/textView_welcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/hello_there"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_theClimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/climate_in_city"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_welcoming" />
+
+    <TextView
+        android:id="@+id/textView_cityCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/city_country"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView_theClimate"
+        app:layout_constraintTop_toTopOf="@id/textView_theClimate" />
+
+    <TextView
+        android:id="@+id/textView_wethearDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16sp"
+        android:text="@string/weather_description"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_theClimate" />
+
+    <TextView
+        android:id="@+id/textView_tempreture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tempreture"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wethearDescription" />
+
+    <ImageView
+        android:id="@+id/imageView_outfit"
+        android:layout_width="0dp"
+        android:layout_height="421dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/outfit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_talkAboutChosenOutfit"
+        app:srcCompat="@drawable/summer_pic_a" />
+
+    <TextView
+        android:id="@+id/textView_PressureNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/pressure_no"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Pressure"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Pressure" />
+
+    <TextView
+        android:id="@+id/textView_humidityNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/heat_no"
+        app:layout_constraintStart_toStartOf="@+id/textView_humidity"
+        app:layout_constraintTop_toBottomOf="@+id/textView_humidity" />
+
+    <TextView
+        android:id="@+id/textView_Pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pressure"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_humidity"
+        app:layout_constraintTop_toTopOf="@+id/textView_humidity" />
+
+    <TextView
+        android:id="@+id/textView_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/wind"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tempreture" />
+
+    <TextView
+        android:id="@+id/textView_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/humidity"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Pressure"
+        app:layout_constraintStart_toEndOf="@+id/textView_wind"
+        app:layout_constraintTop_toTopOf="@+id/textView_wind" />
+
+    <TextView
+        android:id="@+id/textView_windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/wind_speed_no"
+        app:layout_constraintStart_toStartOf="@+id/textView_wind"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wind" />
+
+    <TextView
+        android:id="@+id/textView_talkAboutChosenOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/talk_about_chosen_outfit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_outfit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_windSpeed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

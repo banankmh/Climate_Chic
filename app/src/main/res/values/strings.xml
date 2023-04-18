@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Climate Chic</string>
+    <string name="talk_about_chosen_outfit">According to the climate outside,\nwe Reccomend to u a beautiful outfit</string>
+    <string name="hello_there">Hello There</string>
+    <string name="climate_in_city">Todays Climate in ,</string>
+    <string name="weather_description">Sunnay</string>
+    <string name="tempreture">25ْ C</string>
+    <string name="outfit">outfit</string>
+    <string name="pressure_no">120</string>
+    <string name="heat_no">5</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed_no">21km/h</string>
+    <string name="climate_chic_logo">Climate Chic Logo</string>
+    <string name="city_country">Ramaalah</string>
+</resources>
