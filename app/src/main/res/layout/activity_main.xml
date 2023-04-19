@@ -106,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView_talkAboutChosenOutfit"
-        app:srcCompat="@drawable/summer_pic_a" />
+        tools:src="@drawable/summer_pic_a" />
 
     <TextView
         android:id="@+id/textView_PressureNo"
